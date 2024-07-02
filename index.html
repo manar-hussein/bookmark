@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Inter:wght@700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300&family=Open+Sans:ital,wght@0,300;0,800;1,300&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Righteous&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Inter:wght@700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300&family=Open+Sans:ital,wght@0,300;0,800;1,300&family=PT+Sans+Caption&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Righteous&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="./img/2899445_KXe_icon.ico" type="image/x-icon">
+<link rel="stylesheet" href="./css/all.min.css">
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <section class="vh-100 overflow-auto  position-relative ">
+        <div class="container-fluid position-fixed d-none overflow-auto validationRule  d-flex top-0 bottom-0 start-0 z-3 justify-content-center align-items-center">
+
+          <div class="row justify-content-center">
+            <div class="col-9 ">
+                <div class="card py-3 px-2 rounded-2">
+                    <div class="d-flex align-items-center justify-content-between card-body p-3">
+                        <div class="d-flex align-items-center">
+                            <div class="dots me-1 rounded-circle bg-danger"></div>
+                          <div class="dots my-1 rounded-circle bg-warning"></div>
+                           <div class="dots ms-1 rounded-circle bg-success"></div>
+                        </div>
+                        <button class="btn closebtn"><i class="fa-solid fa-xmark fa-2xl fw-bolder"></i></button>
+
+                    </div>
+                    <div class="card-body p-3">
+                      <h5 class="card-title fw-bolder cardtitle">Site Name or Url is not valid, Please follow the rules below : </h5>
+                      <p class="card-text cardmessage fw-bold"><span><i class="fa-regular fa-circle-right text-danger fa-sm"></i></span> Site name must contain at least 3 characters </p>
+                      <p class="card-text cardmessage fw-bold"><span><i class="fa-regular fa-circle-right text-danger fa-sm"></i></span> Site URL must be a valid one  </p>
+
+                    </div>
+                  </div>
+            </div>
+          </div>
+           
+
+        </div>
+        <div class="vh-100">
+            <div class="container py-5">
+                <div class="head text-center py-5 border-bottom">
+                    <h1 class="z-2">Bookmarker</h1>
+                </div>
+                <div class="body  pt-5 ">
+                    <div class="d-flex justify-content-center align-items-center text-center">
+                        <i class="fa-solid fa-bookmark fa-xl me-2 "></i>
+                    <h2>Bookmark your favorite sites </h2>
+                    <i class="fa-solid fa-bookmark fa-xl ms-2 text-white"></i>
+                    </div>
+
+                    <div class="userArea py-5 border-bottom">
+                        <label for="siteName" class="fw-semibold text-white py-2"><span><i class="fa-solid fa-book-bookmark fa-xs text-white"></i></span>  Site Name</label>
+                        <input  type="text" id="siteName" class="form-control mb-4" placeholder="Bookmark Name">
+                        <label for="siteUrl" class="fw-semibold text-white py-2"><span><i class="fa-solid fa-link fa-xs text-white"></i></span>  Site URL</label>
+                        <input type="url" id="siteUrl" class="form-control" oninput="test(this.value)" placeholder="Website URL">
+                        <div class="text-center"><button class="btn px-5 rounded-pill  my-3 fw-bold">Submit</button></div>
+                    </div>
+
+                    <div class="row py-5 disPlay">
+                        <div class="col-12">
+
+                            <input id="search" class="my-5 form-control" type="text" placeholder="Search..">
+
+                            <table class="table table-borderless table-dark text-center table-hover">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Index</th>
+                                    <th scope="col">Website Name</th>
+                                    <th scope="col">Visit</th>
+                                    <th scope="col">Delete</th>
+                                  </tr>
+                                </thead>
+                                <tbody class="border border-3 border-start-0 border-end-0"></tbody>
+                              </table>
+                           
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+ 
+    
+
+
+
+
+
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

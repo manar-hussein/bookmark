@@ -1,0 +1,100 @@
+section{
+   background-image:linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.85)) ,url(../img/assortment-leaves-flowers-white-background.jpg);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.head h1{
+    font-size: 50px;
+    font-family: 'Pacifico', cursive;
+    color: white;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: inline;
+}
+.head h1::after{
+    content: '';
+    background-color: rgb(44, 44, 193);
+    width: 100%;
+    height: 25%;
+    position: absolute;
+    bottom: 16%;
+    left: 0%;
+    transition: all 0.5s;
+    z-index: -1;
+}
+.head h1:hover::after{
+    height: 45%;
+}
+.body h2{
+    font-size: 25px;
+    font-family: 'Righteous', cursive;
+background: linear-gradient(to left, #ffffff, #2C2CC1);
+background-clip:text;
+-webkit-background-clip:text;
+color: transparent;
+}
+.body i:nth-child(1)
+{
+    color: #2C2CC1
+}
+.userArea{
+    font-family: 'PT Sans Caption', sans-serif;
+    color: white;
+}
+
+section .userArea button{
+    background-color: white;
+    color: black;
+    border-color: white;
+}
+section .userArea button:hover{
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+}
+
+.disPlay{
+    font-family: 'PT Sans Caption', sans-serif;
+}
+#visitBtn {
+    color: white;
+    background-color: #2C2CC1;
+   border: none;
+}
+#deleteBtn{
+    color: white;
+    background-color: #f10664bd;
+   border: none;
+
+}
+#visitBtn:hover{
+    color: white;
+    background-color: #000055;
+    border: none;
+}
+#deleteBtn:hover{
+    color: white;
+    background-color: #600026;
+    border: none;
+}
+
+.validationRule{
+    background: radial-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+    
+}
+.dots{
+    width: 1rem;
+    height: 1rem;
+}
+.validationRule .card-body .cardtitle{
+    font-family: "Bree Serif", serif !important;
+}
+.cardmessage{
+    font-family: "Bree Serif", serif !important;
+    font-size: 18px;
+
+}
+
+
